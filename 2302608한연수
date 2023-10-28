@@ -1,0 +1,38 @@
+function printhello() {
+    console.log("hello");
+}
+printhello();
+
+function log(message) {
+    console.log(message);
+}
+log('Hello@');
+log(1234);
+
+function changeName(obj) {
+    obj.name='coder';
+}
+const ellie={name: 'ellie'};
+changeName(eille);
+console.log(ellie);
+
+//5
+function showMessage(message, from = 'unknown'){
+    console.log('${message} by ${from}')
+}
+showMessage('Hi!');
+
+function printAll(...args) {
+    for(let i =0; i<args.length; i++) {
+        console.log(args[i]);
+    }
+}
+printAll('dream','coding','ellie');
+
+let gloalMessage='global';//global varialbe
+function printMessage(){
+    let message='Hello';
+    console.log(message);//local variable
+    console.log(globalMessage);
+}
+printMessage();
